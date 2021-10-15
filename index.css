@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;1,500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.logo
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 15%;
+    padding: 0px 15px;
+}
+.logo img
+{
+    width: 70%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.nav-bar
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+
+}
+.nav-list
+{
+   width: 70%;
+   /* background-color: black; */
+   display: flex;
+   list-style: none;
+}
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+.nav-list li a:hover{
+ /* text-decoration: none; */
+ color: grey;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.right-nav
+{
+    /* background-color: aqua; */
+    text-align: right;
+    width: 30%;
+    padding: 0px 28px;
+    
+}
+#search
+{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.background
+{
+    background: rgba(0,0,0,0.7) url("https://i1.wp.com/www.circleofblue.org/wp-content/uploads/2020/05/2019-New-York-skyline-iphone-JGanter-IMG_4702.HEIC-Edit-2500.jpg?fit=1500%2C1125&ssl=1");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.first-section
+{
+    height: 100vh;
+}
+.box-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 75%;
+}
+.first-half
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+}
+.second-half
+{
+    width: 30%;
+}
+.second-half img{
+    width: 70%;
+    border: 4px solid white;
+    border-radius: 150%;
+    display: block;
+    margin: auto;
+}
+.big-text
+{
+    font-size: 38px;
+}
+.small-text
+{
+    font-size: 18px;
+}
+.btn
+{
+    padding: 2px 8px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.btn-sm
+{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+.section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+    /* height: 400px; */
+    font-family: 'Ubuntu', sans-serif;
+}
+.left
+{
+   flex-direction: row-reverse;
+}
+.paras
+{
+    padding: 0px 65px;
+    text-align: justify;
+}
+.sub-section-tag
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 3px;
+}
+.img-fluid
+{
+    width: 399px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+.contact
+{
+    background-color: #f6f5f4; 
+    height: 833px;
+}
+.text-center
+{
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 3px;
+    font-size: 30px;
+}
+.form{
+    max-width: 1240px;
+    margin: 24px auto;
+}
+.form-input{
+    font-size: 20px;
+    margin: 9px 0px;
+    padding: 5px 3px;
+    border: 2px solid grey;
+    font-size: 19px;
+    border-radius: 6px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-dark
+{
+    color: black;
+    border: 2px solid black;
+}
+.text-footer
+{
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding:30px 0px;   
+    color: white;
+}
+.burger
+{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+}
+.line
+{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+@media only screen and (max-width:1140px) {
+   .nav-list
+   {
+       flex-direction: column;
+       align-items: center;
+   }   
+   .nav-bar
+   {
+       flex-direction: column;
+       transition: all 0.7s ease-out;
+       height: 500px;
+   }
+   .right-nav
+   {
+       text-align: center;
+   }
+   #search
+   {
+       width: 100%;
+   }
+   .box-main
+   {
+       flex-direction: column-reverse;
+       max-width: 100%;
+   }
+   .burger
+   {
+       display: block;
+   }
+   .h-nav-resp
+   {
+       height: 72px;
+   }
+   .v-class-resp
+   {
+       opacity: 0; /*Visibility Hidden*/
+   }
+   .section
+   {
+       margin-top: 10px;
+       flex-direction: column-reverse;
+   }
+   .big-text
+   {
+       text-align: center;
+   }
+   .small-text
+   {
+       text-align: center;
+   }
+   .buttons
+   {
+       text-align: center;
+   }
+   .paras
+   {
+       padding: 0px;
+   }
+}
