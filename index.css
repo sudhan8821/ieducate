@@ -105,6 +105,8 @@ html
     border-radius: 150%;
     display: block;
     margin: auto;
+    height:180px;
+    margin-top: 20px;
 }
 .big-text
 {
@@ -180,7 +182,7 @@ html
 .form-input{
     font-size: 20px;
     margin: 9px 0px;
-     padding: 5px 5px 0px 30px;
+     padding: 5px 5px 0px 8px;
     border: 2px solid grey;
     font-size: 19px;
     border-radius: 6px;
@@ -281,4 +283,9 @@ html
         width:90%;
         margin-left: 8px;
     }
+     .logo{
+       height: 100px;
+       width: 180px;
+       margin-top: 20px;
+   }
 }
