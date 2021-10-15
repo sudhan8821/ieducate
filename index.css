@@ -180,7 +180,7 @@ html
 .form-input{
     font-size: 20px;
     margin: 9px 0px;
-    padding: 5px 3px;
+     padding: 5px 5px 0px 30px;
     border: 2px solid grey;
     font-size: 19px;
     border-radius: 6px;
